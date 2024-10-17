@@ -22,7 +22,7 @@ app.use(session({
 const spotifyApi = new SpotifyWebApi({
   clientId: process.env.SPOTIFY_CLIENT_ID,
   clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
-  redirectUri: 'http://localhost:3000/callback'
+  redirectUri: 'http://3.235.50.179:3000/callback'
 });
 
 // Middleware para verificar o token
@@ -187,5 +187,5 @@ function generatePlaylistDescription(blocks) {
 
 // Inicializar servidor
 app.listen(port, () => {
-  console.log(`App listening at http://localhost:${port}`);
+  console.log(`App listening at http://3.235.50.179:${port}`);
 });
