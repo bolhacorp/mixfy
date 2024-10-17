@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+select, input, button {
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.playlist-row {
+    cursor: pointer;
+}
+
+.playlist-row:hover {
+    background-color: #f1f1f1;
+}
+
+.track-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.track-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#connect-btn {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#connect-btn:hover {
+    background-color: #1ed760;
+}
+
+.block-controls {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.block-controls select, .block-controls input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+#new-playlist-name {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.dimension-set {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+button.add-dimension {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.add-dimension:hover {
+    background-color: #0056b3;
+}
+
+button.remove-block {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.remove-block:hover {
+    background-color: #ff1a1a;
+}
+
+.energia {
+    height: 15px;
+    width: 100%;
+    background-color: lightgrey;
+    position: relative;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.energia::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: calc(var(--energy-level, 0) * 100%);
+    width: 2px;
+    background-color: black;
+}
+
+.popularidade {
+    display: flex;
+    gap: 2px;
+}
+
+.popularidade .estrela {
+    font-size: 20px;
+    color: #ddd;
+}
+
+.popularidade .estrela.cheia {
+    color: #FFD700;
+}
+
+.dancabilidade {
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    width: 120px; /* Aumentando a largura para evitar quebra de linha */
+}
+
+.dancabilidade .pegada {
+    font-size: 20px;
+}
+
+.mood {
+    font-size: 20px;
+}
+
+.key {
+    font-weight: bold;
+}
+
+.block-name-row {
+    background-color: #f1f1f1;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Estilos para tabela de faixas da playlist */
+#tracks-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#tracks-container th, #tracks-container td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#tracks-container th {
+    background-color: #f9f9f9;
+}
+
+#tracks-container img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tracks-table-row:hover {
+    background-color: #f1f1f1;
+}
+
+.tracks-table td {
+    vertical-align: middle;
+}
+
+/* Gênero - Dropdown com gêneros únicos */
+.genero-select {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+}

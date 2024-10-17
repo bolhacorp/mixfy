@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Playlist Reorganizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Tela Inicial -->
+        <div id="connect-spotify">
+            <h1>Spotify Playlist Reorganizer</h1>
+            <p>Conecte sua conta do Spotify para reorganizar suas playlists!</p>
+            <button id="connect-btn">Conectar ao Spotify</button>
+        </div>
+
+        <!-- Tela de Playlists -->
+        <div id="playlist-container" style="display: none;"></div>
+
+        <!-- Detalhes da Playlist e Criação de Blocos -->
+        <div id="playlist-details" style="display: none;">
+            <h2>Detalhes da Playlist</h2>
+            <div id="playlist-info"></div>
+            <h3>Crie e Organize Sua Nova Playlist</h3>
+            <input type="text" id="new-playlist-name" placeholder="Nome da Nova Playlist">
+            <div id="blocks-container"></div>
+            <button id="add-block">Adicionar Bloco</button>
+            <button id="reorganize">Reorganizar Playlist</button>
+        </div>
+
+        <!-- Lista de Músicas -->
+        <div id="tracks-list" style="display: none;">
+            <h2>Músicas da Playlist</h2>
+            <div id="tracks-container"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
